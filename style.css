@@ -1,4 +1,4 @@
-/* Шапка */
+/*шапка*/
 header {
     background-color: #0d2b45;
     color: #fff;
@@ -11,18 +11,18 @@ header {
 .logo img {
     width: 800px;
     height: 500px;
-    margin-left: 270px;
+    margin-left: 250px;
 }
 nav ul {
     list-style-type: none;
-    margin-inline: auto;
+    margin-left: 380px;
     padding: 0;
     display: flex;
 }
 nav li { margin-right: 20px; }
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #66bb6a;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -36,8 +36,10 @@ body {
     font-family: Geneva, Verdana, sans-serif;
 }
 
-/* Анимация названия сайта */
+/*анимация названия сайта*/
 .site-title {
+    margin-left: auto;
+    margin-right: auto;
     text-align: right;
     opacity: 0;
     animation: fadeInUp 1.5s ease-out forwards;
@@ -47,7 +49,7 @@ body {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Слайдер */
+/*слайдер*/
 .page-title { text-align: center; color: #fff; }
 .slider-container {
     position: relative;
@@ -81,7 +83,7 @@ body {
 .prev-button { left: 10px; }
 .next-button { right: 10px; }
 
-/* О городе */
+/*о городе*/
 .text_o_nas {
     color: #fff;
     width: 80%;
@@ -91,7 +93,7 @@ body {
     margin-right: auto;
 }
 
-/* Галерея */
+/*галерея*/
 .column-container {
     display: flex;
     justify-content: space-between;
@@ -109,12 +111,14 @@ body {
     min-width: 250px;
 }
 
-/* Таблица климата */
+/*таблица климата*/
 .schedule {
     width: 100%;
     border-collapse: collapse;
     color: #fff;
     margin-bottom: 30px;
+    table-layout: fixed;   
+    word-wrap: break-word;
 }
 .schedule th, .schedule td {
     border: 1px solid #4fc3f7;
@@ -124,17 +128,16 @@ body {
 .schedule th { background: #123a5c; }
 .free { color: #66bb6a; font-weight: bold; }
 
-/* Форма */
+/*форма*/
 .obratnuj-zvonok {
     width: 100%;
     max-width: 350px;
-    margin-left: auto;
-    margin-right: auto;
     color: #fff;
     background: #123a5c;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
-    margin-bottom: 30px;
+    margin-left: 450px;
+
 }
 .obratnuj-zvonok label { display: block; margin-top: 10px; }
 .obratnuj-zvonok input[type="text"] {
@@ -154,7 +157,7 @@ body {
 }
 .bot-send-mail:hover { background: #81d4fa; }
 
-/* Подвал */
+/*подвал*/
 footer {
     background-color: #0d2b45;
     color: #fff;
@@ -167,7 +170,7 @@ footer {
 .social-icon { display: inline-block; margin-right: 10px; }
 .social-icon img { width: 32px; height: 32px; vertical-align: middle; }
 
-/* Полноэкранное изображение */
+/*полноэкранное изображение*/
 #fullscreen-container {
     display: none;
     position: fixed;
@@ -194,7 +197,7 @@ footer {
     cursor: pointer;
 }
 
-/* Кнопка «Наверх» */
+/*кнопка наверх*/
 #scrollToTopButton {
     display: none;
     position: fixed;
@@ -208,3 +211,4 @@ footer {
     cursor: pointer;
 }
 #scrollToTopButton:hover { color: #4fc3f7; }
+

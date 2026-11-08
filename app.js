@@ -1,4 +1,4 @@
-// ---------- Слайдер ----------
+// слайдер 
 const slider = document.querySelector('.slider');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
@@ -24,7 +24,7 @@ function updateSlider() {
 }
 updateSlider();
 
-// ---------- Полноэкранный просмотр ----------
+// полноэкранный просмотр
 function openFullscreenImage(element) {
     const fullscreenContainer = document.getElementById('fullscreen-container');
     const fullscreenImage = document.getElementById('fullscreen-image');
@@ -36,7 +36,7 @@ function closeFullscreenImage() {
     fullscreenContainer.style.display = 'none';
 }
 
-// ---------- Кнопка «Наверх» ----------
+// кнопка наверх 
 window.onscroll = function () { 
     scrollFunction(); 
 };

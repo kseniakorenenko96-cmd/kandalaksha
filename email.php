@@ -4,18 +4,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone   = $_POST['phone'];
     $message = $_POST['message'];
 
-    // Адрес, на который нужно отправить письмо
+    // адрес на который нужно отправить письмо
     $to = "kseniakorenenko96@gmail.com";
 
-    // Тема письма
+    // тема письма
     $subject = "Обратная связь от $name";
 
-    // Сообщение
+    // сообщение
     $email_message  = "Имя: $name\n";
     $email_message .= "Телефон: $phone\n";
     $email_message .= "Сообщение:\n$message";
 
-    // Отправка письма
+    // отправка письма
     mail($to, $subject, $email_message);
 
     // Опционально: перенаправление на страницу "Спасибо"
